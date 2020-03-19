@@ -168,6 +168,7 @@ $(document).ready(function () {
         event.preventDefault();
         var post_url = $(this).attr("action");
         var request_method = $(this).attr("method");
+        var that = this;
 
         $.ajax({
             url: post_url,
@@ -175,7 +176,7 @@ $(document).ready(function () {
             data : $(this).serialize()
         }).done(function(response) {
             if(response.status == 201) {
-                $(this).fadeOut();
+                $(that).fadeOut();
                 $('#site-form-result').fadeIn();
             }
         });

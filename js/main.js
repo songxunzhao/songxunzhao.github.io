@@ -168,15 +168,11 @@ $(document).ready(function () {
         event.preventDefault();
         var post_url = $(this).attr("action");
         var request_method = $(this).attr("method");
-        var form_data = new FormData(this);
 
         $.ajax({
             url: post_url,
             type: request_method,
-            data : form_data,
-            contentType: false,
-            cache: false,
-            processData:false
+            data : $(this).serialize()
         }).done(function(response) {
             if(response.status == 201) {
                 $(this).fadeOut();

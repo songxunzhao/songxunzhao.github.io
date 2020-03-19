@@ -1206,6 +1206,9 @@ ul.timeline{
 }
 
 /* Form */
+.site-form-result {
+    display: none;
+}
 
 .site-form .site-input{
     width: 100%;

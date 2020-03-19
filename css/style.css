@@ -41,6 +41,8 @@ body{
     overflow-x: hidden;
     position: relative;
     background: url(../images/bg.png) #fafafa;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .geometric-shapes{

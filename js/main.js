@@ -181,6 +181,10 @@ $(document).ready(function () {
             }
         });
     });
+
+    $('#cv_btn').click(function() {
+       window.open('https://github.com/songxunzhao/songxunzhao.github.io/raw/master/resume.docx', '_blank');
+    });
 }); // document ready end 
 
 "use strict";

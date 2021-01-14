@@ -183,7 +183,7 @@ $(document).ready(function () {
     });
 
     $('#cv_btn').click(function() {
-       window.open('https://github.com/songxunzhao/songxunzhao.github.io/raw/master/resume.docx', '_blank');
+       window.open('https://github.com/songxunzhao/songxunzhao.github.io/raw/master/resume.pdf', '_blank');
     });
 }); // document ready end 
 

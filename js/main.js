@@ -28,14 +28,14 @@ $(document).ready(function () {
         $(outdiv).appendTo("nav");
         var resmenus = $('.tabs').html();
         $(".menuout .menuin .tabs").append(resmenus);
-       $('.menuin').hide(); 
+       $('.menuin').hide();
     }
     transform();
     $('.hamburger').on('click', function() {
-       $('.menuin').slideToggle(); 
+       $('.menuin').slideToggle();
     });
     $('.menuout').on('click', function () {
-        $('.menuin').slideUp();  
+        $('.menuin').slideUp();
     });
 
     // OWL CAROUSEL GENERAL JS
@@ -51,7 +51,7 @@ $(document).ready(function () {
         });
     }
 
-    // PORTFOLIO CONTENT  
+    // PORTFOLIO CONTENT
     $('#grid-container').cubeportfolio({
         layoutMode: 'grid',
         filters: '#filters-container',
@@ -79,7 +79,7 @@ $(document).ready(function () {
                     caption: '',
                     gapHorizontal: 50,
                 }
-            }],            
+            }],
         singlePageCallback: function (url, element) {
             var t = this;
             $.ajax({
@@ -102,9 +102,9 @@ $(document).ready(function () {
                     loadItems: 3,
                 }
             }
-    }); 
+    });
 
-    // BLOG CONTENT  
+    // BLOG CONTENT
     $('#grid-blog').cubeportfolio({
         layoutMode: 'grid',
         gridAdjustment: 'responsive',
@@ -136,9 +136,9 @@ $(document).ready(function () {
                     loadItems: 3,
                 }
             }
-    }); 
+    });
 
-    // GALLERY WIDGET  
+    // GALLERY WIDGET
     $('#widget-gallery').cubeportfolio({
         layoutMode: 'grid',
         gridAdjustment: 'responsive',
@@ -163,7 +163,7 @@ $(document).ready(function () {
                     gapHorizontal: 50,
                 }
             }]
-    }); 
+    });
     $('#site-form').submit(function () {
         event.preventDefault();
         var post_url = $(this).attr("action");
@@ -183,10 +183,10 @@ $(document).ready(function () {
     });
 
     $('#cv_btn').click(function() {
-       window.open('https://github.com/songxunzhao/songxunzhao.github.io/raw/master/resume.pdf', '_blank');
+       window.open('https://github.com/songxunzhao/songxunzhao.github.io/raw/master/Zhao_SongXun_CV.pdf', '_blank');
     });
-}); // document ready end 
+}); // document ready end
 
 "use strict";
 $(window).load(function () {
-}); // window load end 
+}); // window load end
